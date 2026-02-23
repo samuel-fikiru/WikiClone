@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Wikipedia
+    </title>
+    <link rel="icon" href="images/wikipedia.ico">
+</head>
+
+<body>
+    <div class="header-container">
+        <div>
+            <!--   <img class="w-img" src="images/wikipedia.ico">
+             <p class="wiki-text">IKIPEDI<span class="upper-text">A</span></p> -->
+            <img class="wiki-text" src="images/wiki-text.jpg" alt="">
+        </div>
+        <p class="wiki-description">The Free Encyclopedia</p>
+    </div>
+    <div class="body-container">
+        <div class="in-body">
+            <img class="world-logo" src="images/Wikipedia-logo.png" alt="">
+            <div class="articles" id="eng">
+                <a href="">English</a>
+                <p class="no-articles">7,069,00+ articles</p>
+            </div>
+            <div class="articles" id="amh">
+                <a href="">አማረኛ</a>
+                <p class="no-articles">15,000+</p>
+            </div>
+            <div class="articles" id="日本語">
+                <a href="">日本語</a>
+                <p class="no-articles">1,475,000+ <span class="記事">記事</span></p>
+            </div>
+            <div class="articles" id="Русский">
+                <a href="">Русский</a>
+                <p class="no-articles">2 065 000+ статей</p>
+            </div>
+            <div class="articles" id="Deutsch">
+                <a href="">Deutsch</a>
+                <p class="no-articles">3.056.000+ Artikel</p>
+            </div>
+            <div class="articles" id="Français">
+                <a href="">Français</a>
+                <p class="no-articles">2 712 000+ articles</p>
+            </div>
+            <div class="articles" id="Español">
+                <a href="">Español</a>
+                <p class="no-articles">2 712 000+ articles</p>
+            </div>
+            <div class="articles" id="中文">
+                <a href="">中文</a>
+                <p class="no-articles">2 712 000+ articles</p>
+            </div>
+            <div class="articles" id="Italiano">
+                <a href="">Italiano</a>
+                <p class="no-articles">1.938.000+ voci</p>
+            </div>
+            <div class="articles" id="Polski">
+                <a href="">Polski</a>
+                <p class="no-articles">1 670 000+ haseł</p>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text">
+            <button class="srch-btn">
+                <img class="search-icon" src="images/search-icon.png">
+            </button>
+            <select class="search-lan">
+                <option value="af" lang="af">Afrikaans</option>
+                <option value="sq" lang="sq">Shqip</option><!-- Anglisht -->
+                <option value="ar" lang="ar">العربية</option><!-- Al-ʿArabīyah -->
+                <option value="ast" lang="ast">Asturianu</option>
+                <option value="az" lang="az">Azərbaycanca</option>
+                <option value="bg" lang="bg">Български</option><!-- Bǎlgarski -->
+                <option value="nan" lang="nan">閩南語 / Bân-lâm-gú</option><!-- Bân-lâm-gú -->
+                <option value="bn" lang="bn">বাংলা</option><!-- Bangla -->
+                <option value="be" lang="be">Беларуская</option><!-- Belaruskaya -->
+                <option value="ca" lang="ca">Català</option>
+                <option value="cs" lang="cs">Čeština</option>
+                <option value="cy" lang="cy">Cymraeg</option>
+                <option value="da" lang="da">Dansk</option>
+                <option value="de" lang="de">Deutsch</option>
+                <option value="et" lang="et">Eesti</option>
+                <option value="el" lang="el">Ελληνικά</option><!-- Ellīniká -->
+                <option value="en" lang="en" selected=selected>English</option><!-- English -->
+                <option value="es" lang="es">Español</option><!-- Español -->
+                <option value="eo" lang="eo">Esperanto</option>
+                <option value="eu" lang="eu">Euskara</option>
+                <option value="fa" lang="fa">فارسی</option><!-- Fārsi -->
+                <option value="fr" lang="fr">Français</option>
+                <option value="gl" lang="gl">Galego</option><!-- Galego -->
+                <option value="ko" lang="ko">한국어</option><!-- Hangugeo -->
+                <option value="hy" lang="hy">Հայերեն</option><!-- Hayeren -->
+                <option value="hi" lang="hi">हिन्दी</option><!-- Hindī -->
+                <option value="hr" lang="hr">Hrvatski</option>
+                <option value="id" lang="id">Bahasa Indonesia</option>
+                <option value="it" lang="it">Italiano</option>
+                <option value="he" lang="he">עברית</option><!-- Ivrit -->
+                <option value="ka" lang="ka">ქართული</option><!-- Kartuli -->
+                <option value="lld" lang="lld">Ladin</option>
+                <option value="la" lang="la">Latina</option>
+                <option value="lv" lang="lv">Latviešu</option>
+                <option value="lt" lang="lt">Lietuvių</option>
+                <option value="hu" lang="hu">Magyar</option>
+                <option value="mk" lang="mk">Македонски</option><!-- Makedonski -->
+                <option value="mg" lang="mg">Malagasy</option>
+                <option value="mr" lang="mr">मराठी</option><!-- Marathi -->
+                <option value="arz" lang="arz">مصرى</option><!-- Maṣrī -->
+                <option value="ms" lang="ms">Bahasa Melayu</option><!-- Bahasa Melayu -->
+                <option value="min" lang="min">Bahaso Minangkabau</option>
+                <option value="my" lang="my">မြန်မာဘာသာ</option><!-- Myanmarsar -->
+                <option value="nl" lang="nl">Nederlands</option>
+                <option value="ja" lang="ja">日本語</option><!-- Nihongo -->
+                <option value="no" lang="nb">Norsk (bokmål)</option>
+                <option value="nn" lang="nn">Norsk (nynorsk)</option>
+                <option value="ce" lang="ce">Нохчийн</option><!-- Noxçiyn -->
+                <option value="uz" lang="uz">Oʻzbekcha / Ўзбекча</option>
+                <option value="pl" lang="pl">Polski</option>
+                <option value="pt" lang="pt">Português</option>
+                <option value="kk" lang="kk">Қазақша / Qazaqşa / قازاقشا</option>
+                <option value="ro" lang="ro">Română</option>
+                <option value="simple" lang="en">Simple English</option>
+                <option value="ceb" lang="ceb">Sinugboanong Binisaya</option>
+                <option value="sk" lang="sk">Slovenčina</option>
+                <option value="sl" lang="sl">Slovenščina</option><!-- Slovenščina -->
+                <option value="sr" lang="sr">Српски / Srpski</option>
+                <option value="sh" lang="sh">Srpskohrvatski / Српскохрватски</option>
+                <option value="fi" lang="fi">Suomi</option>
+                <option value="sv" lang="sv">Svenska</option>
+                <option value="sw" lang="sw">Kiswahili</option>
+                <option value="ta" lang="ta">தமிழ்</option><!-- Tamiḻ -->
+                <option value="tt" lang="tt">Татарча / Tatarça</option>
+                <option value="te" lang="te">తెలుగు</option><!-- Telugu -->
+                <option value="th" lang="th">ภาษาไทย</option><!-- Phasa Thai -->
+                <option value="tg" lang="tg">Тоҷикӣ</option><!-- Tojikī -->
+                <option value="azb" lang="azb">تۆرکجه</option><!-- Türkce -->
+                <option value="tr" lang="tr">Türkçe</option>
+                <option value="uk" lang="uk">Українська</option><!-- Ukrayins’ka -->
+                <option value="ur" lang="ur">اردو</option><!-- Urdu -->
+                <option value="vi" lang="vi">Tiếng Việt</option>
+                <option value="war" lang="war">Winaray</option>
+                <option value="zh" lang="zh">中文</option><!-- Zhōngwén -->
+                <option value="ru" lang="ru">Русский</option><!-- Russkiy -->
+                <option value="yue" lang="yue">粵語</option>
+            </select>
+        </div>
+        </button>
+
+        <button class="wiki-lan">
+            <span class="lan-icon">文A</span> Read Wikipedia in your language
+            <img class="down-arrow" src="images/arrow-icons.png" alt="">
+        </button>
+    </div>
+    <hr>
+
+
+    <!-- wiki project container goes here -->
+    <div class="wiki-projects-container">
+        <div class="lr">
+            <div class="body-bottom">
+                <img class="wiki-logo2" src="images/wiki-logo2.jpg" alt="">
+                <div class="text-container">
+                    <p class="wiki-obejctives">Wikipedia is hosted by the Wikimedia Foundation, a non-profit
+                        organization that also hosts a range of other projects.</p>
+                    <a href="" class="support-link"> You can support our work with a donation.</a>
+                </div>
+            </div>
+            <div class="fotter-container">
+                <div class="w-container">
+                    <img class="w-img" src="images/wikipedia.ico" alt="">
+                </div>
+                <div class="r-cont">
+                    <a href="" class="dwnld-text">Download Wikipedia for Android or iOS</a>
+                    <p class="wiki-offline">Save your favorite articles to read offline, sync your reading lists across
+                        devices and customize your reading experience with the official Wikipedia app.</p>
+                    <div class="apps">
+                        <img class="app-img" src="images/google-sppdtor.png" alt="">
+                        <img class="app-img" src="images/play-store.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="wiki-projects">
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div>
+                    <a class="cat-title" href="">Commons</a>
+                    <p class="cat-des">Free media collection</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div class="r-side">
+                    <a class="cat-title" href="">Wikivoyage</a>
+                    <p class="cat-des">Free travel guide</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div>
+                    <a class="cat-title" href="">Wikitionary</a>
+                    <p class="cat-des">Free dictionary</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div>
+                    <a class="cat-title" href="">Wikibooks</a>
+                    <p class="cat-des">Free textbooks</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div class="r-side">
+                    <a class="cat-title" href="">Wikinews</a>
+                    <p class="cat-des">Free news source</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div>
+                    <a class="cat-title" href="">Wikidata</a>
+                    <p class="cat-des">Free knowledge base</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div>
+                    <a class="cat-title" href="">Wikiversity</a>
+                    <p class="cat-des">Free learning resources</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div class="r-side">
+                    <a class="cat-title" href="">Wikiqoutes</a>
+                    <p class="cat-des">Free quote compendium</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div>
+                    <a class="cat-title" href="">MidiaWiki</a>
+                    <p class="cat-des">Free & open wiki software</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div>
+                    <a class="cat-title" href="">Wikisource</a>
+                    <p class="cat-des">Free content library</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div class="r-side">
+                    <a class="cat-title" href="">Wikispecies</a>
+                    <p class="cat-des">Free species dictionary</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div>
+                    <a class="cat-title" href="">Wikifunctions</a>
+                    <p class="cat-des">Free function library</p>
+                </div>
+            </div>
+            <div class="catagories">
+                <img class="cat-img" src="images/Catagories/cat1.jpg" alt="">
+                <div>
+                    <a class="cat-title" href="">Meta-Wiki</a>
+                    <p class="cat-des">Community coordination & documentation</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- wiki-projects-container ends here -->
+
+
+    <hr>
+
+    <div class="links">
+        <p class="license-text">This page is available under the</p>
+        <a class="license-links" href="">Creative Commons Attribution-ShareAlike License</a>
+        <p class="dots">•</p>
+        <a href="" class="license-links"> Terms of Use</a>
+        <p class="dots">•</p>
+        <a class="license-links" href="">Privacy Policy</a>
+    </div>
+</body>
+
+</html>
